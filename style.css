@@ -23,6 +23,16 @@ header, footer {
     padding: 5px;
 }
 
+/*Texto que acompaña el titulo*/
+.textHeader {
+    margin: 15px;
+}
+
+/*Lo utilizo para dejar un espacio entre clases distintas*/
+.separador1 {
+    height: 15px;
+}
+
 /*los margin controlan que si la pagina aumenta la imagen mantengan sus parametros de la derecha y la izquierda*/
 .image {
     height: 600px;
@@ -64,6 +74,11 @@ img:hover{
 
 .previous:hover, .avanzar:hover {
     background-color: rgba(3, 40, 105, 0.8);
+}
+
+/*Parrafos que contienen el desarrollo del texto, esto es en pocas palabras "RELLENO", al estilo de Naruto XD*/
+.development1, .development2, .development3 {
+    margin-left: 15px;
 }
 
 /*Propiedades de la imagen al final, encima del pie de pagina*/
