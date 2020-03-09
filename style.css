@@ -1,0 +1,4 @@
+/*Todo el texto de la página utilizara una de estas fuentes*/
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
