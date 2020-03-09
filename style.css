@@ -2,3 +2,76 @@
 * {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+/*Propiedades de la imagen de fondo*/
+body{
+    background-image: url(/fondo/imagen\ 3.jpg);
+    background-color: rgb(4, 46, 98);
+    /*background-position utilizado para centrar la imagen en el medio*/
+    background-position: center center;
+    /*background-repeat para que la imagen no se repita si la pagina contiene mucho contenido*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-attachment utilizado para controlar que la imagen se quede fija y no se mueva cuando se hace scroll*/
+    background-attachment: fixed;
+}
+
+/*Propiedades basicas de el titulo y el pie de pagina: color del background, el texto centrado*/
+header, footer {
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+/*los margin controlan que si la pagina aumenta la imagen mantengan sus parametros de la derecha y la izquierda*/
+.image {
+    height: 600px;
+    width: 1000px;
+    /*los margin left y right automaticos cambiaran el tamaño de la imagen con el tamaño que tenga la pagina web*/
+    margin-left: auto;
+    margin-right: auto;
+    /*El display block mantendra nuestra pagina en el medio*/
+    display: block;
+    background-size: cover;
+}
+
+/*Propiedades que tendran todas las imagenes*/
+/*En CSS los : permiten acceder a propiedades especiales de una etiqueta, clase o elemento general*/
+/*El :hover-selector se utiliza para seleccionar elementos cuando pasa el mouse sobre ellos.*/
+img:hover{
+    /*transition se utiliza para hacer un movimiento suave de las fotos, en este caso se utilizara para todas las img*/
+    transition: all 0.5s linear;
+    /*Al poner el raton encima de la imagen esta obtendra un borde*/
+    border-radius: 30px;
+}
+
+/*Botones para el movimiento*/
+.slider{
+    /*El display block mantendra nuestra pagina en el medio*/
+    display: flex;
+    justify-content: center;
+}
+.slider button {
+    /*parametros del margin arriba, derecha, abajo, izquierda*/
+    margin: 0 25px 0  25px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    font-size: 18px;
+    transition: 0.6s ease;
+}
+
+.previous:hover, .avanzar:hover {
+    background-color: rgba(3, 40, 105, 0.8);
+}
+
+/*Propiedades de la imagen al final, encima del pie de pagina*/
+.lobito {
+    height: 50px;
+    width: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
