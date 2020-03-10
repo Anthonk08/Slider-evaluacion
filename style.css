@@ -1,12 +1,13 @@
 /*Todo el texto de la página utilizara una de estas fuentes*/
-* {
+* { 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /*Propiedades de la imagen de fondo*/
 body{
-    background-image: url(/fondo/imagen\ 3.jpg);
-    background-color: rgb(4, 46, 98);
+    color: white;
+    background-image: url(./fondo/fondo2.jpg);
+    background-color: rgb(2, 21, 45);
     /*background-position utilizado para centrar la imagen en el medio*/
     background-position: center center;
     /*background-repeat para que la imagen no se repita si la pagina contiene mucho contenido*/
@@ -19,8 +20,10 @@ body{
 /*Propiedades basicas de el titulo y el pie de pagina: color del background, el texto centrado*/
 header, footer {
     text-align: center;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(1, 13, 29);
+    opacity: 0.6;
     padding: 5px;
+    
 }
 
 /*Texto que acompaña el titulo*/
@@ -48,9 +51,11 @@ header, footer {
 /*Propiedades que tendran todas las imagenes*/
 /*En CSS los : permiten acceder a propiedades especiales de una etiqueta, clase o elemento general*/
 /*El :hover-selector se utiliza para seleccionar elementos cuando pasa el mouse sobre ellos.*/
-img:hover{
+img {
     /*transition se utiliza para hacer un movimiento suave de las fotos, en este caso se utilizara para todas las img*/
-    transition: all 0.5s linear;
+    transition: all 0.3s linear;
+}
+img:hover{
     /*Al poner el raton encima de la imagen esta obtendra un borde*/
     border-radius: 30px;
 }
@@ -63,16 +68,20 @@ img:hover{
 }
 .slider button {
     /*parametros del margin arriba, derecha, abajo, izquierda*/
-    margin: 0 25px 0  25px;
+    margin: 0 10px 0  10px;
     margin-top: 5px;
     cursor: pointer;
-    border-radius: 0 3px 3px 0;
     user-select: none;
-    font-size: 18px;
+    font-size: 15px;
     transition: 0.6s ease;
+    border-radius: 50%  50%;
+    background-color: grey;
+    opacity: 0.5;
 }
 
-.previous:hover, .avanzar:hover {
+.previous:hover, .next:hover .b1:hover{
+    /*transition se utiliza para hacer un movimiento suave de las fotos, en este caso se utilizara para todas las img*/
+    transition: all 0.4s linear;
     background-color: rgba(3, 40, 105, 0.8);
 }
 
